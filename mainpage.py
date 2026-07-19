@@ -33,7 +33,8 @@ pages = {
 
   "Favorite food": [
      st.Page("food.py", title = "Food")
-  ]
+  ],
+  "Settings": [logout_page]
 }
 if st.session_state.logged_in:
   pg = st.navigation(pages)
