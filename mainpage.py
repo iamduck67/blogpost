@@ -2,6 +2,8 @@ import streamlit as st
 
 st.logo("https://i.ytimg.com/vi/N9g1WHfZgaM/hq720.jpg?sqp=-oaymwExCK4FEIIDSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYZSBPKFMwDw==&rs=AOn4CLAFcZJpKgs3NS2H8C_bOtjbPyWrvA", size="large", link="https://iamduck67.streamlit.app/")
 
+if "logged_in" not in st.session_state:
+  st.session_state.logged_in = False
 def login():
   st.title("Log in")
   with st.form("login_form"):
