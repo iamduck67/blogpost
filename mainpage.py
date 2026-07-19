@@ -25,7 +25,7 @@ logout_page = st.Page(logout, title="Log out", icon=":material/logout:")
 
 pages = {
   "Daily life": [
-    st.Page("page1.py", title = "Page 1"),
+    st.Page("Page1.py", title = "Page 1"),
     st.Page("page2.py", title = "Page 2")
   ],
 
